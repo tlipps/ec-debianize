@@ -4,6 +4,6 @@ set -e
 getent group ethercat >/dev/null || groupadd -r ethercat
 if [ "$1" = "configure" ] ; then
   depmod -a
-  update-ethercat-config
+#  update-ethercat-config
 fi
 exit 0
