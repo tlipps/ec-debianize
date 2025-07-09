@@ -1,5 +1,7 @@
---- a/master/fsm_pdo_entry.c
-+++ b/master/fsm_pdo_entry.c
+Index: etherlabmaster/master/fsm_pdo_entry.c
+===================================================================
+--- etherlabmaster.orig/master/fsm_pdo_entry.c
++++ etherlabmaster/master/fsm_pdo_entry.c
 @@ -224,7 +224,13 @@ void ec_fsm_pdo_entry_read_state_count(
          return;
      }

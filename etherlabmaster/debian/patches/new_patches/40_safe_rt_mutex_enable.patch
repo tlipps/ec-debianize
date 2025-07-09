@@ -1,0 +1,13 @@
+Index: etherlabmaster/master/rt_locks.h
+===================================================================
+--- etherlabmaster.orig/master/rt_locks.h
++++ etherlabmaster/master/rt_locks.h
+@@ -36,7 +36,7 @@
+ 
+ /****************************************************************************/
+ 
+-#ifdef EC_USE_RTMUTEX
++#if defined(CONFIG_RT_MUTEXES) && defined(EC_USE_RTMUTEX)
+ 
+ #include <linux/rtmutex.h>
+ 
